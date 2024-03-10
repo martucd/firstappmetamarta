@@ -23,7 +23,6 @@ const ReservationForm = () => {
 
         <label htmlFor="guests">Number of Guests:</label>
         <input type="number" id="guests" name="guests" min="1" required />
-
         <button type="submit">Submit Reservation</button>
       </form>
     </section>

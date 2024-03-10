@@ -1,17 +1,22 @@
+// index.js
 import React from 'react';
-// import ReactDOM from 'react-dom'; // Remove this line
 import { createRoot } from 'react-dom/client';
-import App from './App';
+import App from './components/App';
+import './index.css';
 
 const root = document.getElementById('root');
 
 const startApp = () => {
-  createRoot(root).render(<React.StrictMode><App /></React.StrictMode>);
+  createRoot(root).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 };
 
 if (process.env.NODE_ENV === 'development' && module.hot) {
-  module.hot.accept('./App', () => {
-    const NextApp = require('./App').default;
+  module.hot.accept('./components/App', () => {
+    const NextApp = require('./components/App').default;
     startApp(NextApp);
   });
 }

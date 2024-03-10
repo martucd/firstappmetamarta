@@ -1,0 +1,81 @@
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #103e12; /* Green color */
+  color: rgb(236, 239, 83);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 2rem;
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 1rem; /* Gap between list items */
+}
+
+/* Style the navigation links */
+nav a {
+  text-decoration: none;
+  color: rgb(236, 239, 83);
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 2px solid white; /* White border for a nice button effect */
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Change color on hover for the navigation links */
+nav a:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+/* Apply styles to the reservation form section */
+#reservation-form {
+  background-color: rgb(236, 239, 83); /* Gold color */
+  color: #333;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* Style the form labels */
+#reservation-form label {
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+#reservation-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the form button */
+#reservation-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change color on hover for the form button */
+#reservation-form button:hover {
+  background-color: #45a049;
+}
