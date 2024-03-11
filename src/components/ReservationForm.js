@@ -31,3 +31,10 @@ const ReservationForm = () => {
 
 export default ReservationForm;
 
+const Footer = () => {
+    return (
+      <div>
+        <img src="logolemon.jpg" ></img>
+      </div>
+    );
+  }
